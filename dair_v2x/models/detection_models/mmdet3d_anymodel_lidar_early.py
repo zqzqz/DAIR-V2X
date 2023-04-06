@@ -7,8 +7,8 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-from base_model import BaseModel
-from model_utils import (
+from dair_v2x.models.base_model import BaseModel
+from dair_v2x.models.model_utils import (
     init_model,
     inference_detector,
     inference_mono_3d_detector,
@@ -20,13 +20,13 @@ from model_utils import (
     read_pcd,
     concatenate_pcd2bin,
 )
-from dataset.dataset_utils import (
+from dair_v2x.dataset.dataset_utils import (
     load_json,
     save_pkl,
     load_pkl,
     read_jpg,
 )
-from v2x_utils import (
+from dair_v2x.v2x_utils import (
     mkdir,
     get_arrow_end,
     box_translation,

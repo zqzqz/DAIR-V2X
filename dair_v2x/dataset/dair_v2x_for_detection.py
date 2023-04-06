@@ -4,9 +4,9 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-from base_dataset import DAIRV2XDataset, get_annos, build_path_to_info
-from dataset.dataset_utils import load_json, InfFrame, VehFrame, VICFrame, Label
-from v2x_utils import Filter, RectFilter, id_cmp, id_to_str, get_trans, box_translation
+from .base_dataset import DAIRV2XDataset, get_annos, build_path_to_info
+from .dataset_utils import load_json, InfFrame, VehFrame, VICFrame, Label
+from dair_v2x.v2x_utils import Filter, RectFilter, id_cmp, id_to_str, get_trans, box_translation
 
 
 class DAIRV2XI(DAIRV2XDataset):

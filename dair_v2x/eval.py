@@ -13,12 +13,12 @@ logger = logging.getLogger(__name__)
 from tqdm import tqdm
 import numpy as np
 
-from v2x_utils import range2box, id_to_str, Evaluator
-from config import add_arguments
-from dataset import SUPPROTED_DATASETS
-from dataset.dataset_utils import save_pkl
-from models import SUPPROTED_MODELS
-from models.model_utils import Channel
+from .v2x_utils import range2box, id_to_str, Evaluator
+from .config import add_arguments
+from .dataset import SUPPROTED_DATASETS
+from .dataset.dataset_utils import save_pkl
+from .models import SUPPROTED_MODELS
+from .models.model_utils import Channel
 
 
 def eval_vic(args, dataset, model, evaluator):

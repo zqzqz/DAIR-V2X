@@ -4,11 +4,11 @@ import logging
 logger = logging.getLogger(__name__)
 import numpy as np
 
-from dataset.dataset_utils import save_pkl, load_pkl, read_jpg
-from v2x_utils import mkdir
-from model_utils import init_model, inference_detector, inference_mono_3d_detector
-from base_model import BaseModel
-from mmdet3d_anymodel_anymodality_late import LateFusionVeh, LateFusionInf
+from dair_v2x.dataset.dataset_utils import save_pkl, load_pkl, read_jpg
+from dair_v2x.v2x_utils import mkdir
+from dair_v2x.models.model_utils import init_model, inference_detector, inference_mono_3d_detector
+from dair_v2x.models.base_model import BaseModel
+from .mmdet3d_anymodel_anymodality_late import LateFusionVeh, LateFusionInf
 
 
 class SingleSide(BaseModel):
